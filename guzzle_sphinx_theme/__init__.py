@@ -5,11 +5,6 @@ import xml.etree.ElementTree as ET
 
 from docutils import nodes
 from sphinx import version_info as sphinx_version
-from sphinx.locale import admonitionlabels
-
-from pygments.style import Style
-from pygments.token import Keyword, Name, Comment, String, Error, \
-     Number, Operator, Generic, Whitespace, Punctuation, Other, Literal
 
 
 def setup(app):
@@ -43,8 +38,8 @@ def add_html_link(app, pagename, templatename, context, doctree):
 def create_sitemap(app, exception):
     """Generates the sitemap.xml from the collected HTML page links"""
     if (not app.config['html_theme_options'].get('base_url', '') or
-           exception is not None or
-           not app.sitemap_links):
+            exception is not None or
+            not app.sitemap_links):
         return
 
     filename = app.outdir + "/sitemap.xml"
@@ -117,8 +112,8 @@ def visit_field_body(self, node):
     self.set_class_on_child(node, 'first', 0)
     field = node.parent
     if (self.compact_field_list or
-        isinstance(field.parent, nodes.docinfo) or
-        field.parent.index(field) == len(field.parent) - 1):
+            isinstance(field.parent, nodes.docinfo) or
+            field.parent.index(field) == len(field.parent) - 1):
         # If we are in a compact list, the docinfo, or if this is
         # the last field of the field list, do not add vertical
         # space after last element.
