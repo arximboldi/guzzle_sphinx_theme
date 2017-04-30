@@ -21,6 +21,7 @@ body {
 }
 
 #right-column {
+  position: relative;
   padding: 0px 0 20px 0;
   margin-left: 300px;
   background-color: #fff;

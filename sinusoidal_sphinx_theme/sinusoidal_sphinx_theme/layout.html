@@ -117,6 +117,9 @@
       {%- block document_wrapper %}
         {%- block document %}
         <div id="right-column">
+          {%- if theme_github_link != None %}
+            {% include "github-corner.html" %}
+          {%- endif %}
           {% block breadcrumbs %}
           <div role="navigation" aria-label="breadcrumbs navigation">
             <ol class="breadcrumb">
