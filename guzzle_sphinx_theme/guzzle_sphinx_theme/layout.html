@@ -87,7 +87,11 @@
         {%- include sidebartemplate %}
         {%- endfor %}
       {% else %}
-        {% include "logo-text.html" %}
+        {%- if logo != None %}
+          {% include "logo-image.html" %}
+        {% else %}
+          {% include "logo-text.html" %}
+        {%- endif %}
         {% include "globaltoc.html" %}
         {% include "searchbox.html" %}
       {%- endif %}
