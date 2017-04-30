@@ -1,15 +1,20 @@
-===================
-Guzzle Sphinx Theme
-===================
+=======================
+Sinusoidal Sphinx Theme
+=======================
 
-Sphinx theme used by Guzzle: http://guzzlephp.org
+Sphinx theme used by [Sinusoidal Engineering](https://sinusoid.al)
+projects.
+
+This is derived from the beautiful [Guzzle Sphinx
+theme](https://github.com/guzzle/guzzle_sphinx_theme).
+
 
 Installation
 ============
 
 Install via pip::
 
-    $ pip install guzzle_sphinx_theme
+    $ pip install sinusoidal_sphinx_theme
 
 or if you have the code checked out locally::
 
@@ -22,15 +27,15 @@ Add the following to your conf.py:
 
 .. code-block:: python
 
-    import guzzle_sphinx_theme
+    import sinusoidal_sphinx_theme
 
-    html_theme_path = guzzle_sphinx_theme.html_theme_path()
-    html_theme = 'guzzle_sphinx_theme'
+    html_theme_path = sinusoidal_sphinx_theme.html_theme_path()
+    html_theme = 'sinusoidal_sphinx_theme'
 
     # Register the theme as an extension to generate a sitemap.xml
-    extensions.append("guzzle_sphinx_theme")
+    extensions.append("sinusoidal_sphinx_theme")
 
-    # Guzzle theme options (see theme.conf for more information)
+    # Sinusoidal theme options (see theme.conf for more information)
     html_theme_options = {
         # Set the name of the project to appear in the sidebar
         "project_nav_name": "Project Name",
@@ -41,15 +46,15 @@ example shows:
 
 .. code-block:: python
 
-    import guzzle_sphinx_theme
+    import sinusoidal_sphinx_theme
 
-    html_theme_path = guzzle_sphinx_theme.html_theme_path()
-    html_theme = 'guzzle_sphinx_theme'
+    html_theme_path = sinusoidal_sphinx_theme.html_theme_path()
+    html_theme = 'sinusoidal_sphinx_theme'
 
     # Register the theme as an extension to generate a sitemap.xml
-    extensions.append("guzzle_sphinx_theme")
+    extensions.append("sinusoidal_sphinx_theme")
 
-    # Guzzle theme options (see theme.conf for more information)
+    # Sinusoidal theme options (see theme.conf for more information)
     html_theme_options = {
 
         # Set the path to a special layout to include for the homepage

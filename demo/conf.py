@@ -23,13 +23,13 @@ html_sidebars = {
            'searchbox.html']
 }
 
-import guzzle_sphinx_theme
+import sinusoidal_sphinx_theme
 
-extensions.append("guzzle_sphinx_theme")
-html_theme_path = guzzle_sphinx_theme.html_theme_path()
-html_theme = 'guzzle_sphinx_theme'
+extensions.append("sinusoidal_sphinx_theme")
+html_theme_path = sinusoidal_sphinx_theme.html_theme_path()
+html_theme = 'sinusoidal_sphinx_theme'
 
-# Guzzle theme options (see theme.conf for more information)
+# Sinusoidal theme options (see theme.conf for more information)
 html_theme_options = {
     "base_url": "http://my-site.com/docs/"
 }

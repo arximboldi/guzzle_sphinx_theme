@@ -1,14 +1,14 @@
 from setuptools import setup
 
 setup(
-    name='guzzle_sphinx_theme',
+    name='sinusoidal_sphinx_theme',
     version='0.7.11',
-    description='Sphinx theme used by Guzzle.',
+    description='Sphinx theme used by Sinusoidal Engineering.',
     long_description=open('README.rst').read(),
-    author='Michael Dowling',
-    author_email='mtdowling@gmail.com',
-    url='https://github.com/guzzle/guzzle_sphinx_theme',
-    packages=['guzzle_sphinx_theme'],
+    author='Juan Pedro Bolivar Puente',
+    author_email='raskolnikov@gnu.org',
+    url='https://github.com/arximboldi/sinusoidal_sphinx_theme',
+    packages=['sinusoidal_sphinx_theme'],
     include_package_data=True,
     install_requires=['Sphinx>=1.2'],
     classifiers=(

@@ -77,7 +77,7 @@
   {% endif %}
 {%- endmacro %}
 
-{%- macro guzzle_sidebar() %}
+{%- macro sinusoidal_sidebar() %}
   <div id="left-column">
     <div class="sphinxsidebar">
       {%- if sidebars != None %}
@@ -109,7 +109,7 @@
         <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
       </div>
 
-      {%- block sidebar1 %}{{ guzzle_sidebar() }}{% endblock %}
+      {%- block sidebar1 %}{{ sinusoidal_sidebar() }}{% endblock %}
 
       {%- block document_wrapper %}
         {%- block document %}
