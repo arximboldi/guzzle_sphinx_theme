@@ -201,6 +201,9 @@ blockquote {
 
 div.sphinxsidebar {
   word-wrap: break-word;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
 }
 
 div.sphinxsidebar .panel-default > .panel-heading {
@@ -348,6 +351,25 @@ div.sphinxsidebar input {
 .image-logo {
   padding: 15px;
 }
+
+.sinusoidal-logo {
+  position: absolute;
+  height:  140px;
+  padding: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+}
+.sinusoidal-logo:hover {
+  opacity: 1;
+}
+.sinusoidal-logo img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* Left-nav search box
 -------------------------------------------------- */
@@ -932,10 +954,13 @@ span.eqno {
     position: relative;
     top: 0;
     left: 0;
-    display: none;
     width: 100%;
     float: none;
     margin: 40px 0 0 0;
+    height: 0;
+  }
+  #left-column.visible {
+    height: auto !important;
   }
 
   .breadcrumb {
@@ -949,7 +974,7 @@ span.eqno {
   #right-column {
     margin-left: 0;
     margin-top: 0;
-    padding: 40px 0px 8px 0px;
+    padding: 0px 0px 8px 0px;
     width: 100%;
     float: none;
   }
@@ -983,9 +1008,7 @@ span.eqno {
 -------------------------------------------------- */
 
 @media screen and (min-width: 769px) {
-  #left-column {
-    display: block !important;
-  }
+
 }
 
 /* Syntax highlighting
