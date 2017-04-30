@@ -5,7 +5,7 @@ body {
   background-color: #ededed;
   margin: 0;
   padding: 0;
-  font-family: "LinuxLibertine", "Source Serif Pro", "serif";
+  font-family: "Linux Libertine", "Source Serif Pro", "serif";
   font-size: 17px;
   color: #333;
   line-height: 1.5;
