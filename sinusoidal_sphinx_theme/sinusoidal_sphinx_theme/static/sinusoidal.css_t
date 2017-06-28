@@ -211,8 +211,8 @@ div.sphinxsidebar .panel-default > .panel-heading {
     background-image: none;
 }
 
-.sidebar-wrapper {
-  padding: 0 22px;
+.sidebar-wrapper{
+    padding: 0 22px;
 }
 
 div.sphinxsidebar h3,
@@ -273,11 +273,9 @@ div.sphinxsidebar .sidebar-toc a {
 .sidebar-toc ul li.toctree-l1 a {
   padding: 5px 25px;
 }
-
 .sidebar-toc ul li.toctree-l2 a {
   padding: 5px 50px;
 }
-
 .sidebar-toc ul li.toctree-l3 a {
   padding: 5px 75px;
 }
@@ -320,6 +318,22 @@ div.sphinxsidebar input {
   font-weight: bold;
   text-transform: uppercase;
   color: #606060;
+}
+.sidebar-block p.caption {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    margin-left: 25px;
+    padding-top: 6px;
+    border-bottom: none;
+    font-size: 14px;
+    font-family: "Source Sans Pro", "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.3em;
+}
+.sidebar-block p.caption:not(:first-child) {
+    padding-top: 18px;
 }
 
 .sidebar-block .bd {
@@ -567,7 +581,11 @@ div.genindex-jumpbox {
 }
 
 div.body p.caption {
-  text-align: inherit;
+    text-align: inherit;
+}
+
+div.body div.toctree-wrapper p.caption {
+    font-weight: bold;
 }
 
 table.field-list {
