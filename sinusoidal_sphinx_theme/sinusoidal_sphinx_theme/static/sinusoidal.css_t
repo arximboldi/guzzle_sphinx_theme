@@ -322,8 +322,8 @@ div.sphinxsidebar input {
 .sidebar-block p.caption {
     margin: 0;
     padding: 0;
-    padding-bottom: 4px;
     margin-left: 25px;
+    padding-bottom: 6px;
     padding-top: 6px;
     border-bottom: none;
     font-size: 14px;
